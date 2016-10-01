@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="resetsheet" href="resetstyle.css">
+	<link rel="stylesheet" href="stylesheet.css">
+	<title>Overwatcher</title>
+</head>
+
+<body>
+	<section id="site-container">
+		<h1>Overwatcher</h1>
+		<h2>Team</h2>
+	<section id="team-bar">
+						<img class="positionIndex" id="pos1" src="./images/empty_select.png">
+						<img class="positionIndex" id="pos2" src="./images/empty_select.png">
+						<img class="positionIndex" id="pos3" src="./images/empty_select.png">
+						<img class="positionIndex" id="pos4" src="./images/empty_select.png">
+						<img class="positionIndex" id="pos5" src="./images/empty_select.png">
+	</section>
+
+		<h2>Hero Select</h2>
+
+	<section id="hero-select">
+				<section class="typeBox" id="support">
+				<h3>Support</h3>
+					<button class="submit" id="lucioSub" onclick="lucioButton()">
+						<img src="./images/icons/Icon-Lucio.png">
+						</button>
+					<button class="submit" id="mercySub" onclick="mercyButton()">
+						<img src="./images/icons/Icon-mercy.png">
+						</button>
+					<button class="submit" id="anaSub" onclick="anaButton()">
+						<img src="./images/icons/Icon-ana.png">
+						</button>
+					<button class="submit" id="zenyattaSub" onclick="zenyattaButton()">
+						<img src="./images/icons/Icon-zenyatta.png">
+						</button>
+					<button class="submit" id="symmetraSub" onclick="symmetraButton()">
+						<img src="./images/icons/Icon-symmetra.png">
+						</button>
+				</section>
+
+				<section class="typeBox" id="offense">
+				<h3>Offense</h3>
+					<button class="submit" id="soldierSub" onclick="soldierButton()">
+						<img src="./images/icons/Icon-Soldier76.png">
+						</button>
+					<button class="submit" id="genjiSub" onclick="genjiButton()">
+						<img src="./images/icons/Icon-genji.png">
+						</button>
+					<button class="submit" id="tracerSub" onclick="tracerButton()">
+						<img src="./images/icons/Icon-tracer.png">
+						</button>
+					<button class="submit" id="mccreeSub" onclick="mccreeButton()">
+						<img src="./images/icons/Icon-mccree.png">
+						</button>
+					<button class="submit" id="pharahSub" onclick="pharahButton()">
+						<img src="./images/icons/Icon-pharah.png">
+						</button>
+					<button class="submit" id="reaperSub" onclick="reaperButton()">
+						<img src="./images/icons/Icon-reaper.png">
+						</button>
+				</section>
+
+				<section class="typeBox" id="defense">
+				<h3>Defense</h3>
+				<button class="submit" id="hanzoSub" onclick="hanzoButton()">
+					<img src="./images/icons/Icon-hanzo.png">
+					</button>
+				<button class="submit" id="widowSub" onclick="widowButton()">
+					<img src="./images/icons/Icon-widowmaker.png">
+					</button>
+				<button class="submit" id="bastionSub" onclick="bastionButton()">
+					<img src="./images/icons/Icon-bastion.png">
+					</button>
+				<button class="submit" id="torbjornSub" onclick="torbjornButton()">
+					<img src="./images/icons/Icon-torbjorn.png">
+					</button>
+				<button class="submit" id="junkratSub" onclick="junkratButton()">
+					<img src="./images/icons/Icon-Junkrat.png">
+					</button>
+				<button class="submit" id="meiSub" onclick="meiButton()">
+					<img src="./images/icons/Icon-mei.png">
+					</button>
+				</section>
+
+				<section class="typeBox" id="tank">
+				<h3>Tank</h3>
+				<button class="submit" id="reinSub" onclick="reinButton()">
+					<img src="./images/icons/Icon-reinhardt.png">
+				</button>
+				<button class="submit" id="zaryaSub" onclick="zaryaButton()">
+					<img src="./images/icons/Icon-zarya.png">
+				</button>
+				<button class="submit" id="roadhogSub" onclick="roadhogButton()">
+					<img src="./images/icons/Icon-Roadhog.png">
+				</button>
+				<button class="submit" id="winstonSub" onclick="winstonButton()">
+					<img src="./images/icons/Icon-winston.png">
+				</button>
+				<button class="submit" id="dvaSub" onclick="dvaButton()">
+					<img src="./images/icons/Icon-dva.png">
+				</button>
+				</section>
+
+			</section>
+
+				<section id="reset">
+					<button type="submit" id="resetButton" onclick="resetButton()">
+						<h3>Reset</h3>
+					</button>
+				</section>
+				<h1 id="suggestStart">Overwatcher Suggests That You Pick...</h1>
+				<section id="team-suggestions">
+							<section class="suggestText" id="lacking">
+								<h3 id="suggestion1"></h3>
+								<h3 id="suggestion2"></h3>
+								<h3 id="suggestion3"></h3>
+								<h3 id="suggestion4"></h3>
+								<h3 id="suggestion5"></h3>
+								<h3 id="suggestion6"></h3>
+								<h3 id="suggestion7"></h3>
+								<h3 id="suggestion8"></h3>
+								<h3 id="suggestion9"></h3>
+								<h3 id="suggestion10"></h3>
+								<h3 id="suggestion11"></h3>
+							</section>
+							<section id="heroSuggestImage">
+								<img class="suggestIMG" id = "heroSuggest0" src="">
+								<img class="suggestIMG" id = "heroSuggest1" src="">
+								<img class="suggestIMG" id = "heroSuggest2" src="">
+								<img class="suggestIMG" id = "heroSuggest3" src="">
+								<img class="suggestIMG" id = "heroSuggest4" src="">
+								<img class="suggestIMG" id = "heroSuggest5" src="">
+								<img class="suggestIMG" id = "heroSuggest6" src="">
+								<img class="suggestIMG" id = "heroSuggest7" src="">
+								<img class="suggestIMG" id = "heroSuggest8" src="">
+								<img class="suggestIMG" id = "heroSuggest9" src="">
+								<img class="suggestIMG" id = "heroSuggest10" src="">
+								<img class="suggestIMG" id = "heroSuggest11" src="">
+							</section>
+							<section class="suggestText" id="heroSuggestText">
+										<h4 id="heroSuggestText0"></h4>
+										<h4 id="heroSuggestText1"></h4>
+										<h4 id="heroSuggestText2"></h4>
+										<h4 id="heroSuggestText3"></h4>
+										<h4 id="heroSuggestText4"></h4>
+										<h4 id="heroSuggestText5"></h4>
+										<h4 id="heroSuggestText6"></h4>
+										<h4 id="heroSuggestText7"></h4>
+										<h4 id="heroSuggestText8"></h4>
+										<h4 id="heroSuggestText9"></h4>
+										<h4 id="heroSuggestText10"></h4>
+										<h4 id="heroSuggestText11"></h4>
+							</section>
+				</section>
+
+				<section id="footer">
+					<h3>Copyright 2016 Joe Zimo</h3>
+				</section>
+
+			</section>
+
+
+  <script type="text/javascript" src="./heroArrays.js"></script>
+	<script type="text/javascript" src="./buttons/lucioButton.js"></script>
+	<script type="text/javascript" src="./buttons/mercyButton.js"></script>
+	<script type="text/javascript" src="./buttons/anaButton.js"></script>
+	<script type="text/javascript" src="./buttons/zenyattaButton.js"></script>
+	<script type="text/javascript" src="./buttons/symmetraButton.js"></script>
+	<script type="text/javascript" src="./buttons/soldierButton.js"></script>
+	<script type="text/javascript" src="./buttons/genjiButton.js"></script>
+	<script type="text/javascript" src="./buttons/tracerButton.js"></script>
+	<script type="text/javascript" src="./buttons/mccreeButton.js"></script>
+	<script type="text/javascript" src="./buttons/pharahButton.js"></script>
+	<script type="text/javascript" src="./buttons/reaperButton.js"></script>
+	<script type="text/javascript" src="./buttons/hanzoButton.js"></script>
+	<script type="text/javascript" src="./buttons/widowButton.js"></script>
+	<script type="text/javascript" src="./buttons/bastionButton.js"></script>
+	<script type="text/javascript" src="./buttons/torbjornButton.js"></script>
+	<script type="text/javascript" src="./buttons/junkratButton.js"></script>
+	<script type="text/javascript" src="./buttons/meiButton.js"></script>
+	<script type="text/javascript" src="./buttons/reinButton.js"></script>
+	<script type="text/javascript" src="./buttons/zaryaButton.js"></script>
+	<script type="text/javascript" src="./buttons/roadhogButton.js"></script>
+	<script type="text/javascript" src="./buttons/winstonButton.js"></script>
+	<script type="text/javascript" src="./buttons/dvaButton.js"></script>
+	<script type="text/javascript" src="./buttons/resetButton.js"></script>
+	<script type="text/javascript" src="./arrayOperations.js"></script>
+	<script type="text/javascript" src="./setAllSuggestionsToBlank.js"></script>
+	<script type="text/javascript" src="./checkTeamArray.js"></script>
+	<script type="text/javascript" src="./checkEmptyState.js"></script>
+	<script type="text/javascript" src="./indexofLargest.js"></script>
+	<script type="text/javascript" src="./determineBestHero.js"></script>
+	<script type="text/javascript" src="./removeChosenHeroes.js"></script>
+</body>
+
+</html>

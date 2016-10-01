@@ -1,0 +1,233 @@
+@font-face
+{
+    font-family: 'owFont';
+    src: url('../fonts/big_noodle_titling_oblique.ttf');
+}
+
+body
+{
+  margin: 0;
+  background-color: grey;
+  background-image: url('../images/site-background.png');
+}
+
+h1
+{
+  font-size: 50px;
+  line-height: 0px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: white;
+}
+
+h2
+{
+  font-size: 30px;
+  line-height: 0px;
+  text-indent: 100px;
+  color: white;
+  letter-spacing: 2px;
+}
+h2:empty
+{
+  display: none;
+}
+
+h3
+{
+  font-size: 20px;
+  line-height: 5px;
+  width: 300px;
+}
+h3:empty
+{
+  display: none;
+}
+
+h4
+{
+  font-size: 30px;
+  line-height: 0px;
+  color: white;
+  letter-spacing: 2px;
+}
+h4:empty
+{
+  display: none;
+}
+
+button
+{
+    display: flex;
+    align-self: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+     transition-duration: 0.4s;
+     border-radius: 10px;
+     box-shadow: none;
+     appearance: none;
+     outline: none;
+}
+
+button.submit:hover
+{
+  background-color: white;
+  outline: none;
+}
+
+button.submit:focus
+{
+  outline: none;
+}
+
+#site-container
+{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: auto;
+  text-align: left;
+  font-family: 'owFont';
+}
+
+#team-bar
+{
+  display: flex;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: row;
+  text-align: center;
+  margin: auto;
+  background-image: url('../images/hero_background.png');
+  border: 1px solid #000000;
+  height: 300px;
+  width: 1200px;
+}
+
+#hero-select
+{
+  display: flex;
+  flex-flow:row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  height: auto;
+  border: 1px solid #000000;
+  background-color: white;
+}
+
+#reset
+{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  padding: 10px;
+}
+
+#team-suggestions
+{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  height: auto;
+  width: 1200px;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+#lacking
+{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  height: inherit;
+  width: 400px;
+  text-align: center;
+  margin: auto;
+}
+
+#heroSuggestImage
+{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  height: inherit;
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  margin: auto;
+}
+
+#heroSuggestText
+{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  height:inherit;
+  width: 300px;
+  text-align: center;
+  margin: auto;
+}
+
+#footer
+{
+  display: flex;
+  flex-flow: row;
+  justify-content:center;
+  align-items:center;
+  align-content:center;
+  align-self:center;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+
+.positionIndex
+{
+  width: 240px;
+  height:auto;
+}
+
+.page-title
+{
+  margin: auto;
+}
+
+.typeBox
+{
+  display: flex;
+  margin: auto;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 15px;
+  width: 300px;
+}
+
+.suggestIMG
+{
+  height: 200px;
+  width: auto;
+}
+
+img[src=""] {
+    display: none;
+}
